@@ -1,6 +1,6 @@
-import React ,{useEffect} from 'react';
-import { Grid, CircularProgress, alertClasses } from '@mui/material';
-import { useSelector ,useDispatch} from 'react-redux';
+import React from 'react';
+import { Grid, CircularProgress } from '@mui/material';
+import { useSelector } from 'react-redux';
 // import { fetchPosts } from '../../features/Posts/postsSlice';
 import Post from './Post/Post';
 import  './styles.css';

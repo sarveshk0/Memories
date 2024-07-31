@@ -41,8 +41,6 @@ console.log('state',posts);
       }
     
 
-      const recommendedPosts = Allposts.filter(({ _id }) => _id !== post._id);
-     console.log('recommededpost',recommendedPosts);
 
   return (
     <Paper style={{ padding: '20px', borderRadius: '15px' }} elevation={6}>

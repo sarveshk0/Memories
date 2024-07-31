@@ -1,11 +1,10 @@
 
-import React,{useEffect,useState}from 'react'
+import React,{useState}from 'react'
 import Posts from '../Posts/Posts.js'
 import Form from '../Form/Form.js'
 import {Container,Grid,Grow, Paper,AppBar,TextField,Button} from '@mui/material'
- import { useDispatch, useSelector } from 'react-redux'
-import { fetchPosts } from '../../features/Posts/postsSlice.js'
- import { unwrapResult } from '@reduxjs/toolkit'
+ import { useDispatch} from 'react-redux'
+
 import Pagination from '../Pagination/Paginate.js'
 import {useNavigate,useLocation}  from 'react-router-dom';
 import { getPostsbysearch } from '../../features/Posts/postsSlice.js'

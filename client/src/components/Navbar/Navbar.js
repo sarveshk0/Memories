@@ -1,5 +1,5 @@
 import React from 'react'
-import {AppBar,Typography,Button,Toolbar} from '@mui/material'
+import {Typography,Button} from '@mui/material'
 import {Avatar} from '@mui/material'
 import {Link} from 'react-router-dom'
 import './style.css'

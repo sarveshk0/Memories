@@ -4,8 +4,8 @@ import { Avatar, Button, Paper, Grid, Typography, Container } from '@mui/materia
 // import { useHistory } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import { googleLogout } from '@react-oauth/google';
-import { useGoogleLogin } from '@react-oauth/google';
-import { jwtDecode } from "jwt-decode";
+// import { useGoogleLogin } from '@react-oauth/google';
+// import { jwtDecode } from "jwt-decode";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import './style.css'
 import Icon from './icon';
