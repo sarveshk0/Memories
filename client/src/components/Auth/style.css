@@ -1,0 +1,31 @@
+
+/* Assuming the stylesheet is placed at the root level */
+
+.paper {
+    margin-top: 8rem; /* Assuming theme.spacing(8) returns 8rem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .root .MuiTextField-root {
+    margin: 1rem; /* Assuming theme.spacing(1) returns 1rem */
+  }
+  
+  .avatar {
+    margin: 1rem;
+    background-color: #ff5722; /* Assuming theme.palette.secondary.main is #ff5722 */
+  }
+  
+  .form {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  
+  .submit {
+    margin: 3rem 0 2rem;
+  }
+  
+  .googleButton {
+    margin-bottom: 2rem;}
