@@ -8,7 +8,7 @@
 // api.js
 import axios from 'axios';
 
-const url='https://memories-0jb9.onrender.com/' // Replace with your API URL
+const url='https://memories-0jb9.onrender.com/posts' // Replace with your API URL
 export const getPost=(id)=>axios.get(`${url}/${id}`)
 export const fetchAllPosts = (page) =>axios.get(`${url}?page=${page}`);
 export const fetchPostBySearch=(searchQuery)=>axios.get(`${url}/search?searchQuery=${searchQuery || 'none'} `);
