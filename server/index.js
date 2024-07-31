@@ -12,8 +12,8 @@ app.use('/posts',postRoutes);
 app.use(bodyParser.json({ limit: '50mb' })); // Increase the payload size limit
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true })); // Increase the payload size limit
 
-app.get('/',(req,res)=>{
-    res.send(`app is running`);
+app.use('/',(req,res)=>{
+    res.json( {message:'hello from backed'});
 })
 //mondb connection
 dotenv.config()
