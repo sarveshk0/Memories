@@ -15,6 +15,8 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true })); // Increase t
 app.use('/',(req,res)=>{
     res.json( {message:'hello from backed'});
 })
+
+export const handler = serverless(app);
 //mondb connection
 dotenv.config()
 const CONNECTION_URL = process.env.MONGODB_URI;
@@ -24,5 +26,5 @@ mongoose.connect(CONNECTION_URL,{useNewUrlParser:'true',useUnifiedTopology: 'tru
 .then(()=>app.listen(PORT,()=>console.log(`App is listen at Port:${PORT}`)))
 .catch((error)=> console.log(error.message));
 
-export const handler = serverless(app);
+
 // mongoose.set('useFindAndModify',false);
