@@ -3,8 +3,7 @@
 
 // const url='http://localhost:5000/posts';
 
-//  export const fetchAllPosts=()=>axios.get(url);
-//  export const createPost=(newPost)=>axios.post(url,newPost);
+
 
 // api.js
 import axios from 'axios';
