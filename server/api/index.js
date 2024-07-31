@@ -5,6 +5,8 @@ import cors from "cors";
 import dotenv from 'dotenv' 
 import serverless  from 'serverless-http'
 import postRoutes from '../routes/posts.js'
+
+
 const app=express();
 app.use(cors());
 app.use(express.json());
@@ -12,11 +14,10 @@ app.use('/posts',postRoutes);
 app.use(bodyParser.json({ limit: '50mb' })); // Increase the payload size limit
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true })); // Increase the payload size limit
 
-app.use('/',(req,res)=>{
-    res.json( {message:'hello from backed'});
-})
 
-export const handler = serverless(app);
+
+ const handler = serverless(app);
+export { handler };
 //mondb connection
 dotenv.config()
 const CONNECTION_URL = process.env.MONGODB_URI;
