@@ -2,8 +2,8 @@ import express from "express"
 import bodyParser from "body-parser"
 import mongoose from "mongoose"
 import cors from "cors";
-import dotenv from 'dotenv'
-
+import dotenv from 'dotenv' 
+import serverless  from 'serverless-http'
 import postRoutes from '../routes/posts.js'
 const app=express();
 app.use(cors());
@@ -24,6 +24,5 @@ mongoose.connect(CONNECTION_URL,{useNewUrlParser:'true',useUnifiedTopology: 'tru
 .then(()=>app.listen(PORT,()=>console.log(`App is listen at Port:${PORT}`)))
 .catch((error)=> console.log(error.message));
 
-
-
+export const handler = serverless(app);
 // mongoose.set('useFindAndModify',false);
