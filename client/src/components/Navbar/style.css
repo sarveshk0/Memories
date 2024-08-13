@@ -1,0 +1,51 @@
+.appBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+   box-shadow: 20px;
+   background-color:black;
+  }
+  
+  .heading {
+    color: rgba(0, 183, 255, 1);
+    text-decoration: none;
+    
+  }
+  
+  .image {
+    margin-left: 15px;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+  }
+  
+  .profile {
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .userName {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .brandContainer {
+   display: flex;
+
+  }
+  
+  .purple {
+    color: #fff; /* You will need to replace this with the appropriate color based on your theme */
+    background-color: #673ab7; /* You will need to replace this with the appropriate color based on your theme */
+  }
+  

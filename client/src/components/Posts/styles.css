@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.smMargin {
+  margin: 8px; /* Assuming theme.spacing(1) is 8px */
+}
+
+.actionDiv {
+  text-align: center;
+}

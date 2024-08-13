@@ -1,0 +1,28 @@
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
+  }
+
+    .appbar{
+       border-radius: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        
+
+       
+       
+    
+  
+    }
+    .heading{
+      color: rgba(0,183,255, 1);
+    }
+    
