@@ -1,6 +1,6 @@
  import axios from 'axios';
 
-  const API= axios.create({baseURL:'https://memories-0jb9.onrender.com/posts'})
+  const API= axios.create({baseURL:'https://memories-0jb9.onrender.com'})
  //const API= axios.create({baseURL:'http://localhost:5000'})
 
 // const url='https://memories-0jb9.onrender.com/posts' // Replace with your API URL
