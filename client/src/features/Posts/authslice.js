@@ -35,7 +35,7 @@ export const signin=createAsyncThunk('/user/signin',async(formData)=>{
 
 
 const authSlice = createSlice({
-  name: "auth",
+   name: "auth",
   initialState:{
     user:null,
     token:null,

@@ -47,7 +47,65 @@ const response=await api.fetchPostBySearch(search,page)
 })
 
 const initialState = {
-    posts: [ ],
+    posts: [ 
+      
+        {
+          "_id": "1",
+          "title": "A Day at the Beach",
+          "message": "I had a wonderful time at the beach with my family. The sunset was breathtaking, and we captured so many memorable moments.",
+          "creator": "John Doe",
+          "tags": ["beach", "sunset", "family", "vacation"],
+          "image": "https://example.com/images/beach-memory.jpg",
+        
+        },
+        {
+          "_id": "2",
+          "title": "Graduation Day",
+          "message": "Graduated today! It was an emotional and proud moment for my family and me. All those years of hard work finally paid off.",
+          "creator": "Alice Johnson",
+          "tags": ["graduation", "achievement", "milestone"],
+          "image": "https://example.com/images/graduation-memory.jpg",
+         
+        },
+        {
+          "_id": "3",
+          "title": "Mountain Hike Adventure",
+          "message": "Conquered the highest peak in the region! The hike was tough, but the view from the top made it all worth it.",
+          "creator": "Michael Green",
+          "tags": ["hiking", "adventure", "mountain", "outdoors"],
+          "image": "https://example.com/images/mountain-hike.jpg",
+        
+        },
+        {
+          "_id": "4",
+          "title": "A Day at the Beach",
+          "message": "I had a wonderful time at the beach with my family. The sunset was breathtaking, and we captured so many memorable moments.",
+          "creator": "John Doe",
+          "tags": ["beach", "sunset", "family", "vacation"],
+          "image": "https://example.com/images/beach-memory.jpg",
+        
+        },
+        {
+          "_id": "5",
+          "title": "Graduation Day",
+          "message": "Graduated today! It was an emotional and proud moment for my family and me. All those years of hard work finally paid off.",
+          "creator": "Alice Johnson",
+          "tags": ["graduation", "achievement", "milestone"],
+          "image": "https://example.com/images/graduation-memory.jpg",
+         
+        },
+        {
+          "_id": "6",
+          "title": "Mountain Hike Adventure",
+          "message": "Conquered the highest peak in the region! The hike was tough, but the view from the top made it all worth it.",
+          "creator": "Michael Green",
+          "tags": ["hiking", "adventure", "mountain", "outdoors"],
+          "image": "https://example.com/images/mountain-hike.jpg",
+        
+        }
+      
+      
+    ],
     post:'',
     status: "idle", // "pending" or "failed" during fetching
     error: null,
