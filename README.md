@@ -22,12 +22,13 @@ Memories is a modern blogging platform where users can create, share, and manage
 
 1. Clone the repository  
 
-   git clone https://github.com/your-username/memories-app.git
+   git clone
+    https://github.com/your-username/memories-app.git
    cd memories-app
-Install dependencies
+2.Install dependencies
 
 npm install
-Start the development server
+3.Start the development server
 
 npm start
 🔗 Live Demo
