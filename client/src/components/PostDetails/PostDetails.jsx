@@ -3,7 +3,7 @@ import  { useEffect } from 'react';
 import { Paper, Typography, CircularProgress, Divider } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
-import { useParams, useNavigate} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { fetchonePost, } from '../../features/Posts/postsSlice';
 import './styles.css'
 

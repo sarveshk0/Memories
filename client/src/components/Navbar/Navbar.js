@@ -3,7 +3,7 @@ import {Typography,Button} from '@mui/material'
 import {Avatar} from '@mui/material'
 import {Link} from 'react-router-dom'
 import './style.css'
-import { removeUser,setUser } from '../../features/Posts/authslice'
+import { removeUser } from '../../features/Posts/authslice'
 import { useNavigate,useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { jwtDecode } from 'jwt-decode'
@@ -38,6 +38,7 @@ const dispatch=useDispatch()
         logout();
       }
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newuser]); 
 
   // useEffect(()=>{

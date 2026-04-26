@@ -1,7 +1,7 @@
 
 import {createSlice,createAsyncThunk} from '@reduxjs/toolkit'
 import * as api from '../../api/index.js'
-import { act } from 'react';
+
 
 
 export const signup=createAsyncThunk('/user/signup',async(formData)=>{

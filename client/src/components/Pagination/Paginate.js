@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fetchPosts } from '../../features/Posts/postsSlice.js'
 
 const Paginate = ({page}) => {
-const {posts,numberOfPages}=useSelector((state)=>state.posts)
+const {numberOfPages}=useSelector((state)=>state.posts)
 const dispatch=useDispatch();
 
 

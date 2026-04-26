@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   client:
-    image: sarveshk0/memories-client:latest
+    image: sarveshk0/memories-client:v2
     container_name: client
     ports:
       - "3000:3000"
@@ -10,7 +10,7 @@ services:
     restart: always  
 
   server:
-    image: sarveshk0/memories-server:latest
+    image: sarveshk0/memories-server:v2
     container_name: server
     ports:
       - "5000:5000"
