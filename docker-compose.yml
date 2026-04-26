@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   client:
-    build: ./client
+    image: sarveshk0/memories-client:latest
     container_name: client
     ports:
       - "3000:3000"
@@ -10,13 +10,10 @@ services:
     restart: always  
 
   server:
-    build: ./server
+    image: sarveshk0/memories-server:latest
     container_name: server
     ports:
       - "5000:5000"
-    environment:
-      # If you want to use the local mongo container instead of Atlas, change this to:
-      # - MONGODB_URI=mongodb://mongo:27017/memories
-      - MONGODB_URI=mongodb+srv://sarveshpco123:sarveshpco123123@cluster0.gn9pmuj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      - PORT=5000  
+    env_file:
+      - .env
     restart: always
